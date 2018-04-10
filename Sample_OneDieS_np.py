@@ -19,7 +19,7 @@ def OneDieS_np(trials, sides):
 
 
     print("s, N_s, N_s-N/sides, N_s/N, N_s/N-1/sides")
-    for s in range(sides):
+    for s in [0, 1, 2, 3, 4, 5]:
         print(s+1, histogram[s], histogram[s]-trials/sides, histogram[s]/trials, histogram[s]/trials-1/sides)
 
     c2=time.clock()
